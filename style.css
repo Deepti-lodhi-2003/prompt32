@@ -1,165 +1,193 @@
-         body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            overflow-x: hidden;
-        }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            background-color: #ffdde1;
-        }
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffdde1;
+}
 
-        .header .logo img {
-            mix-blend-mode: multiply;
-            width: 80px; 
-        }
+.header .logo img {
+    mix-blend-mode: multiply;
+}
 
-        .header .menu {
-            display: flex;
-            gap: 10px; 
-            font-size: 14px; 
-        }
+.header .menu {
+    display: flex;
+    gap: 20px;
+    font-size: 16px;
+}
 
-        .header .menu a {
-            text-decoration: none;
-            color: #333;
-        }
+.header .menu a {
+    text-decoration: none;
+    color: #333;
+}
 
-        .banner {
-            display: flex;
-            flex-wrap: wrap;
-            background-color: #ffe4e9;
-            padding: 10px; 
-            align-items: center;
-        }
+.banner {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffe4e9;
+    padding: 20px;
+    align-items: center;
+}
 
-        .banner .image-section {
-            flex: 1;
-            min-width: 100%;
-            padding: 10px;
-            text-align: center;
-        }
+.banner .image-section {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    text-align: center;
+}
 
-        .banner .image-section img {
-            max-width: 100%;
-            border-radius: 10px;
-        }
+.banner .image-section img {
+    max-width: 100%;
+    border-radius: 10px;
+}
 
-        .banner .text-section {
-            flex: 1;
-            min-width: 100%; 
-            padding: 10px; 
-            text-align: center;
-        }
+.banner .text-section {
+    flex: 2;
+    min-width: 300px;
+    padding: 20px 110px;
+    text-align: center;
+    /* background-color: yellow; */
+}
 
-        .banner .text-section h1 {
-            font-size: 3rem;
-            margin: 10px 0;
-        }
+.banner .text-section h1 {
+    font-size:5rem;
+    margin: 10px 0;
+}
+.banner .text-section .sale-text1 {
+    color: #333;
+    margin: 10px 0 10px 150px;
+    text-shadow: 5px 5px 15px #333;
+}
+.banner .text-section .sale-text2 {
+    margin: 10px 0 10px -30px;
+    color: #ff4081;
+    text-shadow: 5px 5px 15px #ff4081;
+}
+.banner .text-section .sale-text3 {
+    margin: 10px 0 10px -190px;
+    color: #6b3d0c;
+    text-shadow: 5px 5px 15px  #6b3d0c;
+}
 
-        .banner .text-section .sale-text1 {
-            color: #333;
-            margin: 10px 0; 
-            text-shadow: 5px 5px 15px #333;
-        }
+.banner .text-section p {
+    font-size: 18px;
+    color: #666;
+    margin: 10px 0;
+}
 
-        .banner .text-section .sale-text2 {
-            margin: 10px 0;
-            color: #ff4081;
-            text-shadow: 5px 5px 15px #ff4081;
-        }
+.banner .text-section button {
+    background-color:transparent;
+    color: #ff4081;
+    border:2px solid #333;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
 
-        .banner .text-section .sale-text3 {
-            margin: 10px 0; 
-            color: #6b3d0c;
-            text-shadow: 5px 5px 15px #6b3d0c;
-        }
+.banner .text-section .social-icons {
+    margin-top: 30px;
+}
 
-        .banner .text-section p {
-            font-size: 16px;
-            color: #666;
-            margin: 10px 0;
-        }
+.banner .text-section .social-icons a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 10px 12px;
+    border-radius: 50%;
+    background-color: #ff8ab3;
+}
 
-        .banner .text-section button {
-            background-color: transparent;
-            color: #ff4081;
-            border: 2px solid #333;
-            padding: 10px 20px;
-            border-radius: 20px;
-            font-size: 14px; 
-            font-weight: 600;
-            cursor: pointer;
-        }
+.banner .text-section .social-icons a:hover {
+    color: #666;
+    transition: ease 3;
+}
 
-        .banner .text-section .social-icons {
-            margin-top: 20px;
-        }
+img{
+    box-shadow: 0 2px 15px #ff8ab3;
+}
 
-        .banner .text-section .social-icons a {
-            color: #fff;
-            font-size: 20px;
-            margin: 0 5px;
-            text-decoration: none;
-            transition: color 0.3s ease;
-            padding: 8px 10px;
- border-radius: 50%;
-            background-color: #ff8ab3;
-        }
+.sale-banner {
+    background-color: #ff8ab3;
+    color: #fff;
+    padding: 15px 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
 
-        .banner .text-section .social-icons a:hover {
-            color: #666;
-            transition: ease 3;
-        }
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    /* margin-top: 20px; */
+}
 
-        img {
-            box-shadow: 0 2px 15px #ff8ab3;
-        }
+@media (max-width: 768px) {
+body{
+overflow-x: hidden;
+}
+.banner {
+flex-direction: column;
+}
+.header .logo img {
+width: 50px; 
+}
+.header .menu {
+font-size: 12px;
+}
+.banner {
+padding: 40px; 
+}
+.banner .image-section {
+min-width: 80%; 
+padding: 30px; 
+}
+.banner .text-section {
+min-width: 80%;
+padding: 30px; 
+}
+.banner .text-section h1 {
+font-size: 3rem;
+}
 
-        .sale-banner {
-            background-color: #ff8ab3;
-            color: #fff;
-            padding: 15px;
-            margin-top: 20px;
-            font-size: 18px; 
-            border-radius: 5px;
-            text-align: center;
-        }
+.banner .text-section .sale-text1 {
+margin: 10px 0; 
+}
 
-        .footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 15px 0;
-            font-size: 12px; 
-        }
+.banner .text-section .sale-text2 {
+margin: 10px 0;
+}
 
-        @media (max-width: 768px) {
-            body{
-                overflow-x: hidden;
-            }
-            .banner {
-                flex-direction: column;
-            }
-            .header .logo img {
-            width: 50px; 
-            }
-            .header .menu {
-            font-size: 12px;
-            }
-            .banner {
-            padding: 40px; 
-        }
-        .banner .image-section {
-            min-width: 80%; 
-            padding: 30px; 
-        }
-        .banner .text-section {
-            min-width: 80%;
-            padding: 30px; 
-        }
-        }
+.banner .text-section .sale-text3 {
+margin: 10px 0; 
+}
+
+.banner .text-section p {
+font-size: 16px;
+}
+
+.banner .text-section button {
+font-size: 14px;
+}
+
+.banner .text-section .social-icons a {
+font-size: 20px;
+padding: 8px 10px;
+}
+.footer {
+padding: 15px 0;
+font-size: 12px; 
+}
+}
